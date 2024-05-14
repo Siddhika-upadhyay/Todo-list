@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar-scrolled {
+            background-color: #FAF9F6 !important;
+            transition: background-color 0.5s ease;
+        }
+
+        .parallax {
+            width: 100%;
+            height: 600px;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center; /* Align vertically */
+            justify-content: center; /* Align horizontally */
+        }
+
+        .h1, .h2, .h3, .h4 {
+            width: 600px;
+            height: 45px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .para {
+            padding: 25px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .start-button {
+            padding: 20px;
+        }
+
+        .parallax-1 {
+            background:  linear-gradient(to left, #bde8f4, #70afb9,rgb(143, 144, 185));
+        
+        }
+
+        .parallax-2 {
+            background: linear-gradient(to left,rgb(220, 146, 158), #5698aa, #a4d4dc,rgb(188, 162, 216));
+        }
+
+      
+
+    </style>
+</head>
+<body class="body">
+    <header>
+        <nav class="navbar navbar-scrolled navbar-expand-lg navbar-light fixed-top" style="background-color:transparent">
+            <a class="navbar-brand" href="#"><img src="logo.jpg" width="150px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="front page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="key fearture.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Sign-in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="welcome.html">Working</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="g2.html">Start</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="parallax parallax-1">
+        <h2 class="h2">GETTING STARTED</h2>
+    </div>
+
+    <div class="para para-1">
+        <p>Create a new task, you want to do, and then click on 'SAVE' button to save the task.</p>
+    </div>
+
+    <div class="parallax parallax-2">
+        <h2 class="h1">DELETING TASK</h2>
+    </div>
+
+    <div class="para para-2">
+        <p>If you want to remove any task, click on Delete button.</p>
+    </div>
+
+    <div class="parallax parallax-1">
+        <h2 class="h2">COMPLETED TASK</h2>
+    </div>
+
+    <div class="para para-3">
+        <p>Click on 'COMPLETED' button when your task is completed</p>
+    </div>
+
+    <div class="parallax parallax-2">
+        <h2 class="h3">EDITING TASK</h2>
+    </div>
+
+    <div class="para para-4">
+        <p>Edit your task by clicking on the 'Edit' button.</p>
+    </div>
+    <div class="parallax parallax-1">
+        <h2 class="h4">FILTERING TASK</h2>
+    </div>
+
+    <div class="para para-5">
+        <p>You can see your Completed task, Incomplete task, and All task individually.. </p>
+        <a href="g2.html" class="start-button">Get Started</a>
+    </div>
+
+    <!-- Add more parallax sections as needed -->
+
+    <script>
+        var navbar = document.querySelector('nav');
+
+        function handleScroll() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style> 
+    body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:linear-gradient(to right,#bde8f4,#728eab);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Style the navigation bar */
+
+
+    
+ 
+
+/* Center the sign-in option */
+.centered-signin {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.centered-signin h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.centered-signin p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.signin-button {
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+/* ... Previous CSS code ... */
+
+/* Define a CSS animation for the button */
+@keyframes buttonHover {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #102e43;
+    }
+}
+
+/* Apply the animation to the button when hovered */
+.signin-button {
+    background-color: #fff;
+    color: #4a6b80;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.signin-button:hover {
+    animation: buttonHover 0.3s ease; /* Apply the animation on hover */
+    background-color: #2f3132;
+    color: #fff;
+}
+.container {
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 36px;
+    animation: textAnimation 2s  linear infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+body {
+        background: url('https://img.freepik.com/free-photo/blue-watercolor-leaf-background-aesthetic-winter-season_53876-143135.jpg') fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+
+ </style>
+</head>
+<body><header ><nav class="navbar navbar-expand-lg navbar-light fixed-top"  style="background-color:transparent;">
+    <a class="navbar-brand" href="#"><img src="logo.jpg" width="150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="front page.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Sign-in</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="key fearture.html">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="welcome.html">Working</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="g2.html">Start</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+    
+    
+   
+   
+
+    <main>
+        <div class="centered-signin">
+            <div class="animated-text" style="color: #2f3132;">
+                <h1>Welcome to the Task Manager</h1>
+            <p>Sign in to start managing your tasks</p>
+            
+           </div>
+           <form action="form.html"> 
+                <button class="signin-button"  id="sign">Sign In</button>
+                </form>
+             
+        </div>
+       
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    </main>
+
+   
+</body>
+</html>
